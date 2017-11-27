@@ -1,0 +1,304 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 한국어(대한민국) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)\r\n"
+    "LANGUAGE 18, 1\r\n"
+    "#pragma code_page(949)\r\n"
+    "#include ""res\\NTcurling.rc2""  // Microsoft Visual C++ 이외의 다른 도구에서 편집한 리소스입니다.\r\n"
+    "#include ""afxres.rc""     // 표준 구성 요소입니다.\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "NTcurling 정보"
+FONT 9, "MS 셸 대화 상자", 0, 0, 0x1
+BEGIN
+    LTEXT           "NTcurling 버전 1.0",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2017",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "확인",IDOK,178,7,50,16,WS_GROUP
+END
+
+IDD_NTCURLING_DIALOG DIALOGEX 0, 0, 393, 273
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "NTcurling"
+FONT 9, "MS 셸 대화 상자", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "EXIT",IDCANCEL,323,7,63,18
+    CONTROL         "",IDC_TABCONTROL,"SysTabControl32",TCS_HOTTRACK,7,109,379,155
+    PUSHBUTTON      "ELMO Connect",IDC_CONNECT,323,28,63,18
+    PUSHBUTTON      "ELMO Disconnect",IDC_DISCONNECT,323,48,63,18,WS_DISABLED
+    PUSHBUTTON      "Enable",IDC_BUTTON1,323,65,31,16
+    PUSHBUTTON      "Disable",IDC_BUTTON2,355,65,31,16
+    EDITTEXT        IDC_EDIT4,97,61,37,15,ES_RIGHT | ES_AUTOHSCROLL
+    RTEXT           "Stone Rotation(cnt/sec):",IDC_STATIC,12,61,82,15,SS_CENTERIMAGE
+    PUSHBUTTON      "Move",IDC_BUTTON3,139,61,40,15
+    EDITTEXT        IDC_EDIT6,97,80,37,15,ES_RIGHT | ES_AUTOHSCROLL
+    RTEXT           "Gripper Open/Close(A):",IDC_STATIC,12,80,82,15,SS_CENTERIMAGE
+    PUSHBUTTON      "Move",IDC_BUTTON4,139,80,40,15
+    EDITTEXT        IDC_EDIT8,216,78,33,15,ES_RIGHT | ES_AUTOHSCROLL
+    RTEXT           "Camera Lift 1&&2 Axis(deg)",IDC_STATIC,186,61,88,15,SS_CENTERIMAGE
+    PUSHBUTTON      "Move",IDC_BUTTON5,278,61,40,15
+    EDITTEXT        IDC_EDIT10,281,78,33,15,ES_RIGHT | ES_AUTOHSCROLL
+    RTEXT           "1Axis:",IDC_STATIC,189,78,22,15,SS_CENTERIMAGE
+    RTEXT           "2Axis:",IDC_STATIC,254,78,22,15,SS_CENTERIMAGE
+    PUSHBUTTON      "Timer On",IDC_BUTTON6,323,81,63,13
+    PUSHBUTTON      "Timer Off",IDC_BUTTON7,323,94,63,13
+END
+
+IDD_TAB_NT DIALOGEX 0, 0, 370, 150
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT1,90,20,40,16,ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY,WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT2,90,41,40,16,ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY,WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT5,90,61,40,16,ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY,WS_EX_STATICEDGE
+    RTEXT           "Button Number:",IDC_STATIC,31,61,54,16,SS_CENTERIMAGE
+    GROUPBOX        "Joystic Display",IDC_STATIC,7,7,128,73
+    RTEXT           "Joystic Up/Down:",IDC_STATIC,13,20,72,16,SS_CENTERIMAGE
+    RTEXT           "Joystic Left/Right:",IDC_STATIC,13,41,72,16,SS_CENTERIMAGE
+    RTEXT           "Velocity(cnt/sec):",IDC_STATIC,143,26,56,16,SS_CENTERIMAGE
+    RTEXT           "Current(A):",IDC_STATIC,143,49,56,16,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT6,203,26,40,16,ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY,WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT7,203,49,40,16,ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY,WS_EX_STATICEDGE
+    GROUPBOX        "Stone Rotation",IDC_STATIC,137,7,112,73
+    RTEXT           "Position(deg)",IDC_STATIC,256,26,56,16,SS_CENTERIMAGE
+    RTEXT           "Current(A):",IDC_STATIC,256,49,56,16,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT8,316,26,40,16,ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY,WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT9,316,49,40,16,ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY,WS_EX_STATICEDGE
+    GROUPBOX        "Stone Gripper",IDC_STATIC,250,7,112,73
+    RTEXT           "1_Position(deg):",IDC_STATIC,29,92,56,16,SS_CENTERIMAGE
+    RTEXT           "2_Position(deg):",IDC_STATIC,29,116,56,16,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT10,90,92,40,16,ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY,WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT11,90,116,40,16,ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY,WS_EX_STATICEDGE
+    GROUPBOX        "Camera Lift",IDC_STATIC,7,80,127,63
+END
+
+IDD_TAB_YU DIALOGEX 0, 0, 370, 150
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_SPEED,76,20,40,16,ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY,WS_EX_STATICEDGE
+    EDITTEXT        IDC_ANGLE,76,41,40,16,ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY,WS_EX_STATICEDGE
+    EDITTEXT        IDC_CURL,76,61,40,16,ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY,WS_EX_STATICEDGE
+    GROUPBOX        "Release Info",IDC_STATIC,7,7,114,116
+    EDITTEXT        IDC_ACCEL2,190,19,40,16,ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY,WS_EX_STATICEDGE
+    EDITTEXT        IDC_ACCELPOS,190,39,40,16,ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY,WS_EX_STATICEDGE
+    GROUPBOX        "Acceleration Profile",IDC_STATIC,123,7,112,116
+    GROUPBOX        "Robot Info",IDC_STATIC,237,7,126,116
+    RTEXT           "Speed(m/s):",IDC_STATIC,23,25,48,8
+    RTEXT           "Angle(deg):",IDC_STATIC,27,44,44,8
+    RTEXT           "Curl:",IDC_STATIC,25,64,46,8
+    EDITTEXT        IDC_POS,76,81,40,16,ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY,WS_EX_STATICEDGE
+    RTEXT           "Position(m, m):",IDC_STATIC,16,84,55,8
+    EDITTEXT        IDC_TARPOS,76,101,40,16,ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY,WS_EX_STATICEDGE
+    RTEXT           "Target Position:",IDC_STATIC,14,104,57,8
+    RTEXT           "Accel(m^2/s):",IDC_STATIC,130,22,57,8
+    RTEXT           "Position(m, m):",IDC_STATIC,130,43,57,8
+    EDITTEXT        IDC_RANGLE,316,17,40,16,ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY,WS_EX_STATICEDGE
+    EDITTEXT        IDC_RPOS,316,38,40,16,ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY,WS_EX_STATICEDGE
+    EDITTEXT        IDC_HOGDIST,316,58,40,16,ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY,WS_EX_STATICEDGE
+    RTEXT           "Angle(deg):",IDC_STATIC,263,22,48,8
+    RTEXT           "Position(m, m);",IDC_STATIC,249,41,62,8
+    RTEXT           "Hogline Distance(m):",IDC_STATIC,241,61,70,8
+    EDITTEXT        IDC_HOGOFFSET,316,78,40,16,ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY,WS_EX_STATICEDGE
+    RTEXT           "Hogline Offset(m):",IDC_STATIC,247,81,64,8
+    PUSHBUTTON      "Thrower",IDC_BTMODE,7,127,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041203b5"
+        BEGIN
+            VALUE "CompanyName", "TODO: <회사 이름>"
+            VALUE "FileDescription", "TODO: <파일 설명>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "NTcurling.exe"
+            VALUE "LegalCopyright", "TODO: (c) <회사 이름>.  All rights reserved."
+            VALUE "OriginalFilename", "NTcurling.exe"
+            VALUE "ProductName", "TODO: <제품 이름>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x412, 949
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_NTCURLING_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 386
+        VERTGUIDE, 323
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 266
+    END
+
+    IDD_TAB_NT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 363
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 143
+        HORZGUIDE, 80
+    END
+
+    IDD_TAB_YU, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 363
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 143
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_LOGO                BITMAP                  "res\\Logo.bmp"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_ABOUTBOX AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_NTCURLING_DIALOG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_ABOUTBOX            "NTcurling 정보(&A)..."
+END
+
+#endif    // 한국어(대한민국) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+LANGUAGE 18, 1
+#pragma code_page(949)
+#include "res\NTcurling.rc2"  // Microsoft Visual C++ 이외의 다른 도구에서 편집한 리소스입니다.
+#include "afxres.rc"     // 표준 구성 요소입니다.
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
